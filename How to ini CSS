@@ -1,0 +1,4 @@
+## How to ini a CSS
+
+source /opt/ros/melodic/setup.bash
+source ~/ros/hrwros_ws/devel/setup.bash
