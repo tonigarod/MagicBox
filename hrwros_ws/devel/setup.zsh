@@ -1,1 +1,1 @@
-/home/tonigarod/ros/hrwros_ws/devel/.private/catkin_tools_prebuild/setup.zsh
+/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/catkin_tools_prebuild/setup.zsh

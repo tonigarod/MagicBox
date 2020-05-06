@@ -67,14 +67,14 @@ set(hrwros_msgs_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(hrwros_msgs_SOURCE_PREFIX /home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs)
-  set(hrwros_msgs_DEVEL_PREFIX /home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs)
+  set(hrwros_msgs_SOURCE_PREFIX /home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs)
+  set(hrwros_msgs_DEVEL_PREFIX /home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs)
   set(hrwros_msgs_INSTALL_PREFIX "")
   set(hrwros_msgs_PREFIX ${hrwros_msgs_DEVEL_PREFIX})
 else()
   set(hrwros_msgs_SOURCE_PREFIX "")
   set(hrwros_msgs_DEVEL_PREFIX "")
-  set(hrwros_msgs_INSTALL_PREFIX /home/tonigarod/ros/hrwros_ws/install)
+  set(hrwros_msgs_INSTALL_PREFIX /home/tonigarod/git/MagicBox-ROS/hrwros_ws/install)
   set(hrwros_msgs_PREFIX ${hrwros_msgs_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(hrwros_msgs_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/include " STREQUAL " ")
+if(NOT "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/include " STREQUAL " ")
   set(hrwros_msgs_INCLUDE_DIRS "")
-  set(_include_dirs "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/include")
+  set(_include_dirs "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/include " STREQ
         message(FATAL_ERROR "Project 'hrwros_msgs' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'hrwros_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'hrwros_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/${idir}'.  ${_report}")
     endif()
     _list_append_unique(hrwros_msgs_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/lib;/home/tonigarod/ros/hrwros_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/lib;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

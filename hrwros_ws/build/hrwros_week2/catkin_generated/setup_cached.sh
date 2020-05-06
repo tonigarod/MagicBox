@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_week2:$CMAKE_PREFIX_PATH"
-export PWD="/home/tonigarod/ros/hrwros_ws/build/hrwros_week2"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_week2/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/tonigarod/ros/hrwros_ws/src/hrwros_week2:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_week2:$CMAKE_PREFIX_PATH"
+export PWD="/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_week2"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_week2/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros_week2:$ROS_PACKAGE_PATH"

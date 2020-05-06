@@ -1,1 +1,1 @@
-/home/tonigarod/ros/hrwros_ws/devel/.private/catkin_tools_prebuild/_setup_util.py
+/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/catkin_tools_prebuild/_setup_util.py

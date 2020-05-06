@@ -1,8 +1,8 @@
-prefix=/home/tonigarod/ros/hrwros_ws/install
+prefix=/home/tonigarod/git/MagicBox-ROS/hrwros_ws/install
 
 Name: hrwros_week1
 Description: Description of hrwros_week1
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/tonigarod/ros/hrwros_ws/install/lib 
+Libs: -L/home/tonigarod/git/MagicBox-ROS/hrwros_ws/install/lib 
 Requires: 

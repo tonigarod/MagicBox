@@ -1,8 +1,8 @@
-# Install script for directory: /home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs
+# Install script for directory: /home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tonigarod/ros/hrwros_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,165 +49,165 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/tonigarod/ros/hrwros_ws/install/_setup_util.py")
+   "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/tonigarod/ros/hrwros_ws/install" TYPE PROGRAM FILES "/home/tonigarod/ros/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/install" TYPE PROGRAM FILES "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/tonigarod/ros/hrwros_ws/install/env.sh")
+   "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/tonigarod/ros/hrwros_ws/install" TYPE PROGRAM FILES "/home/tonigarod/ros/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/install" TYPE PROGRAM FILES "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/tonigarod/ros/hrwros_ws/install/setup.bash;/home/tonigarod/ros/hrwros_ws/install/local_setup.bash")
+   "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/install/setup.bash;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/tonigarod/ros/hrwros_ws/install" TYPE FILE FILES
-    "/home/tonigarod/ros/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/setup.bash"
-    "/home/tonigarod/ros/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/install" TYPE FILE FILES
+    "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/setup.bash"
+    "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/tonigarod/ros/hrwros_ws/install/setup.sh;/home/tonigarod/ros/hrwros_ws/install/local_setup.sh")
+   "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/install/setup.sh;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/tonigarod/ros/hrwros_ws/install" TYPE FILE FILES
-    "/home/tonigarod/ros/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/setup.sh"
-    "/home/tonigarod/ros/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/install" TYPE FILE FILES
+    "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/setup.sh"
+    "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/tonigarod/ros/hrwros_ws/install/setup.zsh;/home/tonigarod/ros/hrwros_ws/install/local_setup.zsh")
+   "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/install/setup.zsh;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/tonigarod/ros/hrwros_ws/install" TYPE FILE FILES
-    "/home/tonigarod/ros/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/setup.zsh"
-    "/home/tonigarod/ros/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/install" TYPE FILE FILES
+    "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/setup.zsh"
+    "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/tonigarod/ros/hrwros_ws/install/.rosinstall")
+   "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/tonigarod/ros/hrwros_ws/install" TYPE FILE FILES "/home/tonigarod/ros/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/install" TYPE FILE FILES "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/.rosinstall")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hrwros_msgs/msg" TYPE FILE FILES
-    "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg"
-    "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg"
-    "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg"
-    "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg"
-    "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg"
+    "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg"
+    "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg"
+    "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg"
+    "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg"
+    "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hrwros_msgs/srv" TYPE FILE FILES "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hrwros_msgs/srv" TYPE FILE FILES "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hrwros_msgs/action" TYPE FILE FILES "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/action/CounterWithDelay.action")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hrwros_msgs/action" TYPE FILE FILES "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/action/CounterWithDelay.action")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hrwros_msgs/msg" TYPE FILE FILES
-    "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg"
-    "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg"
-    "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg"
-    "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg"
-    "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg"
-    "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg"
-    "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg"
+    "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg"
+    "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg"
+    "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg"
+    "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg"
+    "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg"
+    "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg"
+    "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hrwros_msgs/cmake" TYPE FILE FILES "/home/tonigarod/ros/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/hrwros_msgs-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hrwros_msgs/cmake" TYPE FILE FILES "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/hrwros_msgs-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/include/hrwros_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/include/hrwros_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/roseus/ros/hrwros_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/roseus/ros/hrwros_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/common-lisp/ros/hrwros_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/common-lisp/ros/hrwros_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/gennodejs/ros/hrwros_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/gennodejs/ros/hrwros_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/lib/python2.7/dist-packages/hrwros_msgs")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/lib/python2.7/dist-packages/hrwros_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/lib/python2.7/dist-packages/hrwros_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/lib/python2.7/dist-packages/hrwros_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tonigarod/ros/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/hrwros_msgs.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/hrwros_msgs.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hrwros_msgs/cmake" TYPE FILE FILES "/home/tonigarod/ros/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/hrwros_msgs-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hrwros_msgs/cmake" TYPE FILE FILES "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/hrwros_msgs-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hrwros_msgs/cmake" TYPE FILE FILES
-    "/home/tonigarod/ros/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/hrwros_msgsConfig.cmake"
-    "/home/tonigarod/ros/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/hrwros_msgsConfig-version.cmake"
+    "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/hrwros_msgsConfig.cmake"
+    "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_msgs/catkin_generated/installspace/hrwros_msgsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hrwros_msgs" TYPE FILE FILES "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hrwros_msgs" TYPE FILE FILES "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/tonigarod/ros/hrwros_ws/build/hrwros_msgs/gtest/cmake_install.cmake")
+  include("/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_msgs/gtest/cmake_install.cmake")
 
 endif()
 
@@ -219,5 +219,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tonigarod/ros/hrwros_ws/build/hrwros_msgs/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_msgs/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

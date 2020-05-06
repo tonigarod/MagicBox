@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tonigarod/ros/hrwros_ws/src/hrwros_support
+CMAKE_SOURCE_DIR = /home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros_support
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tonigarod/ros/hrwros_ws/build/hrwros_support
+CMAKE_BINARY_DIR = /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support
 
 # Utility rule file for doxygen.
 
@@ -67,6 +67,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/tonigarod/ros/hrwros_ws/build/hrwros_support && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tonigarod/ros/hrwros_ws/src/hrwros_support /home/tonigarod/ros/hrwros_ws/src/hrwros_support /home/tonigarod/ros/hrwros_ws/build/hrwros_support /home/tonigarod/ros/hrwros_ws/build/hrwros_support /home/tonigarod/ros/hrwros_ws/build/hrwros_support/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros_support /home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros_support /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

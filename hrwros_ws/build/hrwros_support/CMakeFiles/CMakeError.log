@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/tonigarod/ros/hrwros_ws/build/hrwros_support/CMakeFiles/CMakeTmp
+Change Dir: /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f6fff/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f6fff.dir/build.make CMakeFiles/cmTC_f6fff.dir/build
-make[1]: Entering directory '/home/tonigarod/ros/hrwros_ws/build/hrwros_support/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f6fff.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_f6fff.dir/CheckSymbolExists.c.o   -c /home/tonigarod/ros/hrwros_ws/build/hrwros_support/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_f6fff
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6fff.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f6fff.dir/CheckSymbolExists.c.o  -o cmTC_f6fff 
-CMakeFiles/cmTC_f6fff.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_b1c66/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b1c66.dir/build.make CMakeFiles/cmTC_b1c66.dir/build
+make[1]: Entering directory '/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b1c66.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_b1c66.dir/CheckSymbolExists.c.o   -c /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_b1c66
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1c66.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b1c66.dir/CheckSymbolExists.c.o  -o cmTC_b1c66 
+CMakeFiles/cmTC_b1c66.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_f6fff.dir/build.make:97: recipe for target 'cmTC_f6fff' failed
-make[1]: *** [cmTC_f6fff] Error 1
-make[1]: Leaving directory '/home/tonigarod/ros/hrwros_ws/build/hrwros_support/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_f6fff/fast' failed
-make: *** [cmTC_f6fff/fast] Error 2
+CMakeFiles/cmTC_b1c66.dir/build.make:97: recipe for target 'cmTC_b1c66' failed
+make[1]: *** [cmTC_b1c66] Error 1
+make[1]: Leaving directory '/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b1c66/fast' failed
+make: *** [cmTC_b1c66/fast] Error 2
 
-File /home/tonigarod/ros/hrwros_ws/build/hrwros_support/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/tonigarod/ros/hrwros_ws/build/hrwros_support/CMakeFiles/CMakeTmp
+Change Dir: /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1a0ad/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1a0ad.dir/build.make CMakeFiles/cmTC_1a0ad.dir/build
-make[1]: Entering directory '/home/tonigarod/ros/hrwros_ws/build/hrwros_support/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1a0ad.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_1a0ad.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_1a0ad
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a0ad.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_1a0ad.dir/CheckFunctionExists.c.o  -o cmTC_1a0ad -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_a7119/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a7119.dir/build.make CMakeFiles/cmTC_a7119.dir/build
+make[1]: Entering directory '/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a7119.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a7119.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a7119
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7119.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_a7119.dir/CheckFunctionExists.c.o  -o cmTC_a7119 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_1a0ad.dir/build.make:97: recipe for target 'cmTC_1a0ad' failed
-make[1]: *** [cmTC_1a0ad] Error 1
-make[1]: Leaving directory '/home/tonigarod/ros/hrwros_ws/build/hrwros_support/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_1a0ad/fast' failed
-make: *** [cmTC_1a0ad/fast] Error 2
+CMakeFiles/cmTC_a7119.dir/build.make:97: recipe for target 'cmTC_a7119' failed
+make[1]: *** [cmTC_a7119] Error 1
+make[1]: Leaving directory '/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a7119/fast' failed
+make: *** [cmTC_a7119/fast] Error 2
 
 

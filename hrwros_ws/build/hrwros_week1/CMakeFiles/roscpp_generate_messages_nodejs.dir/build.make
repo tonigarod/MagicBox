@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_week1
+CMAKE_SOURCE_DIR = /home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_week1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tonigarod/ros/hrwros_ws/build/hrwros_week1
+CMAKE_BINARY_DIR = /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_week1
 
 # Utility rule file for roscpp_generate_messages_nodejs.
 
@@ -67,6 +67,6 @@ CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
 .PHONY : CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 
 CMakeFiles/roscpp_generate_messages_nodejs.dir/depend:
-	cd /home/tonigarod/ros/hrwros_ws/build/hrwros_week1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_week1 /home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_week1 /home/tonigarod/ros/hrwros_ws/build/hrwros_week1 /home/tonigarod/ros/hrwros_ws/build/hrwros_week1 /home/tonigarod/ros/hrwros_ws/build/hrwros_week1/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_week1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_week1 /home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_week1 /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_week1 /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_week1 /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_week1/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
 

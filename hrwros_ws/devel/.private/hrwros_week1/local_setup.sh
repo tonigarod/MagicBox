@@ -3,7 +3,7 @@
 
 # since this file is sourced either use the provided _CATKIN_SETUP_DIR
 # or fall back to the destination set at configure time
-: ${_CATKIN_SETUP_DIR:=/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_week1}
+: ${_CATKIN_SETUP_DIR:=/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_week1}
 CATKIN_SETUP_UTIL_ARGS="--extend --local"
 . "$_CATKIN_SETUP_DIR/setup.sh"
 unset CATKIN_SETUP_UTIL_ARGS

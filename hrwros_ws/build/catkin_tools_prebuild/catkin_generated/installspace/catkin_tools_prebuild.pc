@@ -1,8 +1,8 @@
-prefix=/home/tonigarod/ros/hrwros_ws/install
+prefix=/home/tonigarod/git/MagicBox-ROS/hrwros_ws/install
 
 Name: catkin_tools_prebuild
 Description: Description of catkin_tools_prebuild
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/tonigarod/ros/hrwros_ws/install/lib 
+Libs: -L/home/tonigarod/git/MagicBox-ROS/hrwros_ws/install/lib 
 Requires: 

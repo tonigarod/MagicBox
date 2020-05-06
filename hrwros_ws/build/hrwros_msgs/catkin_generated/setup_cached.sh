@@ -7,10 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD="/home/tonigarod/ros/hrwros_ws/build/hrwros_msgs"
-export PYTHONPATH="/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs:$CMAKE_PREFIX_PATH"
+export PWD="/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_msgs"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs:$ROS_PACKAGE_PATH"

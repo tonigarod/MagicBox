@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/usr/src/googletest")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/tonigarod/ros/hrwros_ws/build/hrwros_week1")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_week1")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

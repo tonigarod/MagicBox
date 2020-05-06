@@ -2,7 +2,7 @@
 
 message(STATUS "hrwros_msgs: 12 messages, 1 services")
 
-set(MSG_I_FLAGS "-Ihrwros_msgs:/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg;-Ihrwros_msgs:/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg;-Itrajectory_msgs:/opt/ros/melodic/share/trajectory_msgs/cmake/../msg;-Imoveit_msgs:/opt/ros/melodic/share/moveit_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg;-Ishape_msgs:/opt/ros/melodic/share/shape_msgs/cmake/../msg;-Iobject_recognition_msgs:/opt/ros/melodic/share/object_recognition_msgs/cmake/../msg;-Ioctomap_msgs:/opt/ros/melodic/share/octomap_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Ihrwros_msgs:/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg;-Ihrwros_msgs:/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg;-Itrajectory_msgs:/opt/ros/melodic/share/trajectory_msgs/cmake/../msg;-Imoveit_msgs:/opt/ros/melodic/share/moveit_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg;-Ishape_msgs:/opt/ros/melodic/share/shape_msgs/cmake/../msg;-Iobject_recognition_msgs:/opt/ros/melodic/share/object_recognition_msgs/cmake/../msg;-Ioctomap_msgs:/opt/ros/melodic/share/octomap_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,69 +17,69 @@ add_custom_target(hrwros_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg" NAME_WE)
 add_custom_target(_hrwros_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg" "sensor_msgs/Range:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg" ""
 )
 
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg" NAME_WE)
 add_custom_target(_hrwros_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg" "actionlib_msgs/GoalID:hrwros_msgs/CounterWithDelayFeedback:actionlib_msgs/GoalStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg" "hrwros_msgs/CounterWithDelayActionFeedback:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:hrwros_msgs/CounterWithDelayFeedback:hrwros_msgs/CounterWithDelayGoal:hrwros_msgs/CounterWithDelayActionResult:hrwros_msgs/CounterWithDelayResult:std_msgs/Header:hrwros_msgs/CounterWithDelayActionGoal"
 )
 
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg" NAME_WE)
 add_custom_target(_hrwros_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:hrwros_msgs/CounterWithDelayResult:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg" "geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/PoseStamped:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg" NAME_WE)
 add_custom_target(_hrwros_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg" ""
 )
 
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg" NAME_WE)
 add_custom_target(_hrwros_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg" "hrwros_msgs/CounterWithDelayFeedback:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg" NAME_WE)
 add_custom_target(_hrwros_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg" ""
 )
 
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv" NAME_WE)
 add_custom_target(_hrwros_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg" "trajectory_msgs/JointTrajectory:trajectory_msgs/MultiDOFJointTrajectoryPoint:moveit_msgs/RobotTrajectory:geometry_msgs/Twist:trajectory_msgs/JointTrajectoryPoint:geometry_msgs/Transform:std_msgs/Header:geometry_msgs/Vector3:trajectory_msgs/MultiDOFJointTrajectory:geometry_msgs/Quaternion"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv" ""
 )
 
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg" NAME_WE)
 add_custom_target(_hrwros_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg" "actionlib_msgs/GoalID:hrwros_msgs/CounterWithDelayGoal:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg" "hrwros_msgs/CounterWithDelayResult:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg" NAME_WE)
 add_custom_target(_hrwros_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg" "geometry_msgs/Pose:geometry_msgs/Point:geometry_msgs/Quaternion:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg" "hrwros_msgs/CounterWithDelayGoal:actionlib_msgs/GoalID:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg" NAME_WE)
 add_custom_target(_hrwros_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg" "sensor_msgs/Range:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg" NAME_WE)
 add_custom_target(_hrwros_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg" "geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/PoseStamped:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg" "trajectory_msgs/JointTrajectory:trajectory_msgs/MultiDOFJointTrajectoryPoint:moveit_msgs/RobotTrajectory:geometry_msgs/Twist:trajectory_msgs/JointTrajectoryPoint:geometry_msgs/Transform:std_msgs/Header:geometry_msgs/Vector3:trajectory_msgs/MultiDOFJointTrajectory:geometry_msgs/Quaternion"
 )
 
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg" NAME_WE)
 add_custom_target(_hrwros_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg" "geometry_msgs/Pose:geometry_msgs/Point:geometry_msgs/Quaternion:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg" NAME_WE)
 add_custom_target(_hrwros_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg" "actionlib_msgs/GoalID:hrwros_msgs/CounterWithDelayActionFeedback:actionlib_msgs/GoalStatus:hrwros_msgs/CounterWithDelayActionGoal:hrwros_msgs/CounterWithDelayResult:hrwros_msgs/CounterWithDelayActionResult:std_msgs/Header:hrwros_msgs/CounterWithDelayGoal:hrwros_msgs/CounterWithDelayFeedback"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hrwros_msgs" "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg" ""
 )
 
 #
@@ -89,81 +89,81 @@ add_custom_target(_hrwros_msgs_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/Range.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_cpp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_cpp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_cpp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hrwros_msgs
 )
 _generate_msg_cpp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayFeedback.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayGoal.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionResult.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hrwros_msgs
 )
 _generate_msg_cpp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_cpp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/MultiDOFJointTrajectoryPoint.msg;/opt/ros/melodic/share/moveit_msgs/cmake/../msg/RobotTrajectory.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/MultiDOFJointTrajectory.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_cpp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_cpp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_cpp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hrwros_msgs
 )
 _generate_msg_cpp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_cpp(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_cpp(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_cpp(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_cpp(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_cpp(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/Range.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_cpp(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/MultiDOFJointTrajectoryPoint.msg;/opt/ros/melodic/share/moveit_msgs/cmake/../msg/RobotTrajectory.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/MultiDOFJointTrajectory.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_cpp(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hrwros_msgs
 )
 _generate_msg_cpp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionGoal.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayResult.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayGoal.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayFeedback.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hrwros_msgs
 )
 
 ### Generating Services
 _generate_srv_cpp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hrwros_msgs
@@ -181,31 +181,31 @@ add_custom_target(hrwros_msgs_generate_messages_cpp
 add_dependencies(hrwros_msgs_generate_messages hrwros_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_cpp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_cpp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_cpp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_cpp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_cpp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_cpp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_cpp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_cpp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_cpp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_cpp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_cpp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_cpp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_cpp _hrwros_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -218,81 +218,81 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS hrwros_msgs_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/Range.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_eus(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_eus(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_eus(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hrwros_msgs
 )
 _generate_msg_eus(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayFeedback.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayGoal.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionResult.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hrwros_msgs
 )
 _generate_msg_eus(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_eus(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/MultiDOFJointTrajectoryPoint.msg;/opt/ros/melodic/share/moveit_msgs/cmake/../msg/RobotTrajectory.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/MultiDOFJointTrajectory.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_eus(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_eus(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_eus(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hrwros_msgs
 )
 _generate_msg_eus(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_eus(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_eus(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_eus(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_eus(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_eus(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/Range.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_eus(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/MultiDOFJointTrajectoryPoint.msg;/opt/ros/melodic/share/moveit_msgs/cmake/../msg/RobotTrajectory.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/MultiDOFJointTrajectory.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_eus(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hrwros_msgs
 )
 _generate_msg_eus(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionGoal.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayResult.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayGoal.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayFeedback.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hrwros_msgs
 )
 
 ### Generating Services
 _generate_srv_eus(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hrwros_msgs
@@ -310,31 +310,31 @@ add_custom_target(hrwros_msgs_generate_messages_eus
 add_dependencies(hrwros_msgs_generate_messages hrwros_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_eus _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_eus _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_eus _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_eus _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_eus _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_eus _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_eus _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_eus _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_eus _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_eus _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_eus _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_eus _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_eus _hrwros_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -347,81 +347,81 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS hrwros_msgs_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/Range.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_lisp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_lisp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_lisp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hrwros_msgs
 )
 _generate_msg_lisp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayFeedback.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayGoal.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionResult.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hrwros_msgs
 )
 _generate_msg_lisp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_lisp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/MultiDOFJointTrajectoryPoint.msg;/opt/ros/melodic/share/moveit_msgs/cmake/../msg/RobotTrajectory.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/MultiDOFJointTrajectory.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_lisp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_lisp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_lisp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hrwros_msgs
 )
 _generate_msg_lisp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_lisp(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_lisp(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_lisp(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_lisp(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_lisp(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/Range.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_lisp(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/MultiDOFJointTrajectoryPoint.msg;/opt/ros/melodic/share/moveit_msgs/cmake/../msg/RobotTrajectory.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/MultiDOFJointTrajectory.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_lisp(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hrwros_msgs
 )
 _generate_msg_lisp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionGoal.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayResult.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayGoal.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayFeedback.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hrwros_msgs
 )
 
 ### Generating Services
 _generate_srv_lisp(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hrwros_msgs
@@ -439,31 +439,31 @@ add_custom_target(hrwros_msgs_generate_messages_lisp
 add_dependencies(hrwros_msgs_generate_messages hrwros_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_lisp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_lisp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_lisp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_lisp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_lisp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_lisp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_lisp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_lisp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_lisp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_lisp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_lisp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_lisp _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_lisp _hrwros_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -476,81 +476,81 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS hrwros_msgs_generate_messages_lisp)
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/Range.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_nodejs(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_nodejs(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_nodejs(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hrwros_msgs
 )
 _generate_msg_nodejs(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayFeedback.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayGoal.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionResult.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hrwros_msgs
 )
 _generate_msg_nodejs(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_nodejs(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/MultiDOFJointTrajectoryPoint.msg;/opt/ros/melodic/share/moveit_msgs/cmake/../msg/RobotTrajectory.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/MultiDOFJointTrajectory.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_nodejs(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_nodejs(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_nodejs(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hrwros_msgs
 )
 _generate_msg_nodejs(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_nodejs(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_nodejs(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_nodejs(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_nodejs(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_nodejs(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/Range.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_nodejs(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/MultiDOFJointTrajectoryPoint.msg;/opt/ros/melodic/share/moveit_msgs/cmake/../msg/RobotTrajectory.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/MultiDOFJointTrajectory.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_nodejs(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hrwros_msgs
 )
 _generate_msg_nodejs(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionGoal.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayResult.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayGoal.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayFeedback.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hrwros_msgs
 )
 
 ### Generating Services
 _generate_srv_nodejs(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hrwros_msgs
@@ -568,31 +568,31 @@ add_custom_target(hrwros_msgs_generate_messages_nodejs
 add_dependencies(hrwros_msgs_generate_messages hrwros_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_nodejs _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_nodejs _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_nodejs _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_nodejs _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_nodejs _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_nodejs _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_nodejs _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_nodejs _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_nodejs _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_nodejs _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_nodejs _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_nodejs _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_nodejs _hrwros_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -605,81 +605,81 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS hrwros_msgs_generate_messages_nodej
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/Range.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_py(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_py(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_py(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hrwros_msgs
 )
 _generate_msg_py(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayFeedback.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayGoal.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionResult.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionGoal.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hrwros_msgs
 )
 _generate_msg_py(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_py(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/MultiDOFJointTrajectoryPoint.msg;/opt/ros/melodic/share/moveit_msgs/cmake/../msg/RobotTrajectory.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/MultiDOFJointTrajectory.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_py(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_py(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hrwros_msgs
-)
-_generate_msg_py(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hrwros_msgs
 )
 _generate_msg_py(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_py(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_py(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_py(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_py(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_py(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/sensor_msgs/cmake/../msg/Range.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_py(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectory.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/MultiDOFJointTrajectoryPoint.msg;/opt/ros/melodic/share/moveit_msgs/cmake/../msg/RobotTrajectory.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/JointTrajectoryPoint.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/trajectory_msgs/cmake/../msg/MultiDOFJointTrajectory.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hrwros_msgs
+)
+_generate_msg_py(hrwros_msgs
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hrwros_msgs
 )
 _generate_msg_py(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionGoal.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayResult.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayGoal.msg;/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/CounterWithDelayFeedback.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hrwros_msgs
 )
 
 ### Generating Services
 _generate_srv_py(hrwros_msgs
-  "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv"
+  "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hrwros_msgs
@@ -697,31 +697,31 @@ add_custom_target(hrwros_msgs_generate_messages_py
 add_dependencies(hrwros_msgs_generate_messages hrwros_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_py _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_py _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_py _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_py _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_py _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/BoxHeightInformation.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayGoal.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_py _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_py _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_py _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_py _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/srv/ConvertMetresToFeet.srv" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/SensorInformation.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_py _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/src/hrwros/hrwros_msgs/msg/TargetToolPoses.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/RobotTrajectories.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_py _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayResult.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros/hrwros_msgs/msg/ObjectDetection.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_py _hrwros_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayAction.msg" NAME_WE)
+get_filename_component(_filename "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg" NAME_WE)
 add_dependencies(hrwros_msgs_generate_messages_py _hrwros_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

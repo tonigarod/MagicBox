@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tonigarod/ros/hrwros_ws/src/hrwros_week2
+CMAKE_SOURCE_DIR = /home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros_week2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tonigarod/ros/hrwros_ws/build/hrwros_week2
+CMAKE_BINARY_DIR = /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_week2
 
 # Utility rule file for run_tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/tonigarod/ros/hrwros_ws/build/hrwros_week2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tonigarod/ros/hrwros_ws/src/hrwros_week2 /home/tonigarod/ros/hrwros_ws/src/hrwros_week2 /home/tonigarod/ros/hrwros_ws/build/hrwros_week2 /home/tonigarod/ros/hrwros_ws/build/hrwros_week2 /home/tonigarod/ros/hrwros_ws/build/hrwros_week2/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_week2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros_week2 /home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros_week2 /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_week2 /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_week2 /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_week2/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 

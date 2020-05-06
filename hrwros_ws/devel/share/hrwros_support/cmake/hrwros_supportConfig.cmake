@@ -1,1 +1,1 @@
-/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_support/share/hrwros_support/cmake/hrwros_supportConfig.cmake
+/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_support/share/hrwros_support/cmake/hrwros_supportConfig.cmake

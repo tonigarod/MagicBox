@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/tonigarod/ros/hrwros_ws/install/setup.sh
+    local-name: /home/tonigarod/git/MagicBox-ROS/hrwros_ws/install/setup.sh

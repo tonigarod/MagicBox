@@ -1,1 +1,1 @@
-/home/tonigarod/ros/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/cmake/hrwros_msgsConfig.cmake
+/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_msgs/share/hrwros_msgs/cmake/hrwros_msgsConfig.cmake
