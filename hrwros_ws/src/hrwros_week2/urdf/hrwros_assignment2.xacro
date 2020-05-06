@@ -91,7 +91,24 @@
 
 
   <!-- Add your solution to assignment 2 here -->
+  <material name="green">
+   <color rgba="0 0.8 0 1"/>
+  </material>
 
+  <link name="sphere_dummy_link">
+   <visual>
+    <geometry>
+     <sphere radius="0.4"/>
+    </geometry>
+    <material name="green"/>
+   </visual>
+  </link>
+
+  <joint name="sphere_dummy_joint" type="fixed">
+   <parent link="world_interface" />
+   <child link="sphere_dummy_link" />
+   <origin xyz="5.5 -5 0.4" rpy="0 0 0" />
+  </joint>
 
 
 

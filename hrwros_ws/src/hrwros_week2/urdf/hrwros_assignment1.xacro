@@ -26,6 +26,7 @@
   <xacro:include filename="$(find hrwros_support)/urdf/bin/bin.urdf.xacro"/>
   <xacro:bin_urdf prefix="bin_1_"/>
 
+
   <!-- Joints -->
   <joint name="world_interface_to_world" type="fixed">
     <parent link="world" />
@@ -60,6 +61,7 @@
   </joint>
 
 
+
   <link name="robot2_pedestal_link">
     <visual>
       <origin xyz="0 0 0.3" />
@@ -92,7 +94,13 @@
 
   <!-- Add your solution to assignment 1 here -->
 
-
+  <!-- extra bin -->
+  <xacro:bin_urdf prefix="bin_extra_"/>
+  <joint name="bin_extra_joint" type="fixed">
+    <parent link="world_interface" />
+    <child link="bin_extra_base_link" />
+    <origin xyz="2.05 1.8 0.0" rpy="0 0 0" />
+  </joint>
 
 
 
