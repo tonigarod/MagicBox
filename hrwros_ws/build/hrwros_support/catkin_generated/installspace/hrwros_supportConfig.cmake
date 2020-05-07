@@ -67,7 +67,7 @@ set(hrwros_support_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(hrwros_support_SOURCE_PREFIX /home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros_support)
+  set(hrwros_support_SOURCE_PREFIX /home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros_support_week_3)
   set(hrwros_support_DEVEL_PREFIX /home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_support)
   set(hrwros_support_INSTALL_PREFIX "")
   set(hrwros_support_PREFIX ${hrwros_support_DEVEL_PREFIX})

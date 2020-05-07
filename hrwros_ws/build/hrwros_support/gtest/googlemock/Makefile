@@ -48,7 +48,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros_support
+CMAKE_SOURCE_DIR = /home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros_support_week_3
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support

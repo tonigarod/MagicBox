@@ -1,4 +1,4 @@
-# Install script for directory: /home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros_support
+# Install script for directory: /home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros_support_week_3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -140,7 +140,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hrwros_support" TYPE FILE FILES "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros_support/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hrwros_support" TYPE FILE FILES "/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros_support_week_3/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

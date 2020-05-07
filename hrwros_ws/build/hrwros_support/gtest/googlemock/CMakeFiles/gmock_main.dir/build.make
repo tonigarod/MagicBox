@@ -43,7 +43,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros_support
+CMAKE_SOURCE_DIR = /home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros_support_week_3
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support
@@ -162,6 +162,6 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/clean
 
 gtest/googlemock/CMakeFiles/gmock_main.dir/depend:
-	cd /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros_support /usr/src/googletest/googlemock /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support/gtest/googlemock /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support/gtest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros_support_week_3 /usr/src/googletest/googlemock /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support/gtest/googlemock /home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support/gtest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 

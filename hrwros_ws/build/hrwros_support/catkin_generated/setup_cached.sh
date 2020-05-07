@@ -10,4 +10,4 @@
 export CMAKE_PREFIX_PATH="/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_support:$CMAKE_PREFIX_PATH"
 export PWD="/home/tonigarod/git/MagicBox-ROS/hrwros_ws/build/hrwros_support"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/tonigarod/git/MagicBox-ROS/hrwros_ws/devel/.private/hrwros_support/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros_support:$ROS_PACKAGE_PATH"
+export ROS_PACKAGE_PATH="/home/tonigarod/git/MagicBox-ROS/hrwros_ws/src/hrwros_support_week_3:$ROS_PACKAGE_PATH"
